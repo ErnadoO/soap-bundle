@@ -8,6 +8,7 @@ services:
     nfq_soap.factory:
         class: Nfq\Bundle\SoapBundle\Factory
         arguments: ["@event_dispatcher"]
+        public: true
 
     nfq_soap.pretty_xml_formatter:
         class: PrettyXml\Formatter
